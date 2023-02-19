@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Quiz</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  
+    <div class = "note"><h2><center>note</center></h2>
+        <p class ="c">This quiz consists of 5 questions </p>
+        <p class ="c">There is no time limit</p>
+        <p class ="c">Each question carries 1 mark</p>
+      
+    </div>
+  
+  <div id="question-container">  
+    <div class="form-style">
+      <h1>The Quiz</h1>
+      <h2>Test your Knowledge</h2>
+      <form id="quiz-form">
+        <fieldset>
+
+          
+          <center><h1><span class="number"></span><span class="number"></span> Quiz <span class="number"></span><span class="number"></span></h1></center>
+
+                <!--QUESTION ONE !-->
+                <div id="name">
+                 <!-- <label for="q1" class= "text-label">Enter Your Name</label> -->
+                 <input type="text" name="q1" id="q1" placeholder="Enter Your Name"></div>
+
+                <!--QUESTION TWO !-->
+                 <div class = radio>
+                  <p class= "text-label" id ="Q"></p><br>
+                    <ul class="radio">
+                      <div class="fieldgroup">
+                        <input type="radio" name="q2" value="a" id="q2a" class="radio-label"><label for="q2a" id ="opt1">Option 1</label><br/>
+                      </div>
+                        <div class="fieldgroup">
+                        <input type="radio" name="q2" value="b" id="q2b" class="radio-label"><label for="q2b" id ="opt2">Option 2</label><br/>
+                      </div>
+                      <div class="fieldgroup">
+                        <input type="radio" name="q2" value="c" id="q2c" class="radio-label"><label for="q2c" id ="opt3">Option 3</label><br/>
+                      </div>
+                      <div class="fieldgroup">
+                        <input type="radio" name="q2" value="d" id="q2d" class="radio-label"><label for="q2d" id ="opt4">Option 4</label><br/>
+                      </div>
+                    </ul>
+                 </div>
+                    <button type="button" onclick="question()" id ="nxt">Start Quiz</button> 
+                
+
+      <button type="button" onclick="myFunction()" id ="submit" disabled>Submit</button> 
+       <!-- <input type="submit" onclick="myFunction()" id ="submit">Submit -->
+
+       <p id="result"></p>
+       <p id="answers"></p>
+
+      </form>
+    </div>
+   <script src="js/index.js"></script>
+  </div>
+
+
+                
+
+ 
+</body>
+</html>
